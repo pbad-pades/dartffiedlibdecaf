@@ -11,7 +11,7 @@ This repository relies on multiple submodules, so you have to clone (or initiali
 The recommended way to clone is:
 
 ```
-git clone --recurse-submodules https://github.com/pbad-pades/dartffiedlibdecaf.git
+git clone https://github.com/pbad-pades/dartffiedlibdecaf.git
 ```
 
 ### As dart package
@@ -22,7 +22,7 @@ It is recommended to use SSH keys, like:
 dependencies:
   dartffiedlibdecaf:
     git:
-      url: git@github.com:pbad-pades/dartffiedlibdecaf.git
+      url: https://github.com/pbad-pades/dartffiedlibdecaf.git
 ```
 After, run 
 ```
