@@ -17,7 +17,7 @@ String locatePath()
 
   } else if (Platform.isWindows) {
     home = envVars['UserProfile'] ?? '';
-    path = home + '\\AppData\\Roaming\\Pub\\Cache\\git';
+    path = home + '\\AppData\\Local\\Pub\\Cache\\git';
   }
   var files = Directory(path).listSync();
 
@@ -48,9 +48,9 @@ String locatePath()
   }
 
   if (Platform.isMacOS || Platform.isLinux) {
-    return path + '/lib/src/linux/libdecaf.so';
+    return path + '/lib/src/exec/libdecaf.so';
   } else if (Platform.isWindows) {
-    return path + '\\lib\\src\\linux\\libdecaf.so';
+    return path + '\\lib\\src\\exec\\libdecaf.so';
   } else {
     return '';
   }
